@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="Style.Css">
+    <!-- CSS -->
+
+
+	<!-- Metadatos (Son de la parte interna de la pagina por eso van en el head) -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Palabras Claves -->
+	<meta name="Keywords" content="Ayuda,Curso,Tutorial">
+	<!-- Descripción de la página -->
+	<meta name="Description"content="Esta es una página web de prueba con el propósito de aprender a usar el lenguaje de programación HTML">
+	<!-- Desarrollador de la página -->
+	<meta name="Author"content="Bautista Gagliano">
+	<!-- Nombre de la empresa -->
+	<meta name="CopyRight"content="Facebook Inc.">
+	<!-- Si quiero que mi pagina SI se muestre al usar las palabras claves -->
+	<meta name="Robots"content="Index">
+	<!-- Si quiero que mi pagina NO se muestre al usar las palabras claves -->
+	<meta name="Robots"content="NoIndex">
+    <!-- Personalizar ícono -->
+    <link rel="Icon"href="descarga.ico">
+    <!-- Cambiar Título de la página -->
+	<title>Título</title>
+</head>
+<body>
+
+<!-- Se utiliza el article para involucrar dentro todo lo principal de la página  -->
+<article>
+<!-- las cajitas llegan hasta el maximo de la pagina -->
+<h1>H1</h1>
+<h2 class="MousePorEncima">Pasa el Mouse Encima</h2>
+<h2>H2</h2>
+<h3>H3</h3>
+<!-- El br autocompleta el renglon -->
+<br>
+<!-- El br autocompleta el renglon -->
+<h4 id="Element">H4</h4>
+<h5 class="Subtitulo">H5</h5>
+<h6 class="Subtitulo">H6</h6>
+
+<h4 class="Seleccionar__h4">Selecciona este texto</h4>
+
+<p class="Pseudoelemento__p">
+	Este es un parrafo: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</p>
+
+<a href="#Bajar">Visitar El Footer</a>
+<br>
+<!-- las cajitas llegan hasta el maximo de la palabra -->
+<b>Negrita<b>
+<i>Italica<i>
+<strike>tachada</strike>
+<small>Chiquita</small>
+
+<h4 class="beforeYafter__h4">gusta mucho</h4>
+
+<!-- Ajusta el tamaño de las cajitas -->
+<div>
+	<h1>Este es un H1 dentro de un Div</h1>
+</div>
+
+
+<h5 class="form">
+ MANTEN EL MOUSE EN ESTA CAJA
+</h5>
+<div class="form__pulsar">
+ PULSA ESTA CAJA
+</div>
+<div class="Overflow"><p  class="Overflow__p">
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+<p></div>
+
+
+<a class="Link1" href="https://www.youtube.com/">Click para dirigirse a otra pagina</a>
+<br>
+<a class="Link2" href="https://www.youtube.com/" target="_blank">Click para dirigirse a otra pagina en otra ventana aparte</a>
+<br>
+<a class="Link3" href="indexSegundoEnlace.html">Click para  dirigirse a la segunda pagina web</a>
+
+<br>
+<br>
+<br>
+<h3>MENOR ESPECIFICIDAD(Elementos)</h3>
+<h3>MENOR ESPECIFICIDAD(Pseudoelementos)</h3>
+<h3 class="Clase-Especificidad">POCA ESPECIFICIDAD(Clases)</h3>
+<h3>POCA ESPECIFICIDAD(Pseudoclases)</h3>
+<h3 id="Identificacion-especificidad">MEDIA ESPECIFICIDAD(Identiificador)</h3>
+<h3 style="Color:violet">MEDIA ALTA ESPECIFICIDAD(Estilos en linea)</h3>
+<h3>MAYOR ESPECIFICIDAD(!important)</h3>
+<br>
+<br>
+<br>
+<!-- Listas -->
+
+ <ul>
+ 	<li>Lista 1</li>
+ 	<li>Lista 2</li>
+
+ 	<ol>
+	   <li>Lista 1</li>
+   	   <li>Lista 2</li>
+    <ol>
+ </ul>
+<!-- Nav -->
+<header>
+	<nav>
+		<ul>
+			<li><a href="index.Html">inicio</a></li>
+			<li><a href="Mi cuenta.Html">Mi Cuenta</a></li>
+		</ul>
+	</nav>
+</header>
+
+ <!-- Multimedia -->
+ <div><img src="http://www.cursosgis.com/wp-content/uploads/2017/06/lenguajes_1.png"alt="Html,Css,JavaScript" Title="Lenguajes de programación"></div>
+
+<div class="Bordes"><img class="Bordes__img" src="http://www.cursosgis.com/wp-content/uploads/2017/06/lenguajes_1.png"alt="Html,Css,JavaScript" Title="Lenguajes de programación"></div>
+
+<div class="Div-img"><img src="http://www.cursosgis.com/wp-content/uploads/2017/06/lenguajes_1.png"alt="Html,Css,JavaScript" Title="Lenguajes de programación"></div>
+<br>
+<video
+ src="">
+</video>
+<!-- Video con controles -->
+<br>
+<video 
+src=""controls>
+</video>
+<br>
+<audio
+	scr="Franco.ogg"controls
+></audio>
+<br>
+
+<!-- Formularios -->
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+<form>
+	<input type="Text" placeholder="Inserte su nombre">
+	<!-- Obligatorio rellenar (Se puede utilizar con todos los input) -->
+	<input type="Text"placeholder="Inserte su nombre (OBLIGATORIO)"Required="">
+	<input type="Password"placeholder="Inserte su contraseña">
+	<input type="Number"placeholder="Inserte su numero favorito">
+	<input type="Email"placeholder="Inserte su Email">
+	<input type="Color">
+
+	<input type="Range">
+	<input type="Range"min=1 max=5>
+
+	<input type="Date">
+	<input type="Time">
+	<input type="Button"Value="Boton">
+
+	<textarea></textarea>
+	<textarea class="dontModify" ReadOnly="">No se puede modificar</textarea>
+
+	<input type="Submit">
+</form>
+
+
+<table>
+	<tr>
+		<td><b>Nombre<b></td>
+		<td><b>Apellido<b></td>
+	</tr>
+	<tr>
+		<td>Bautista</td>
+		<td>Gagliano</td>
+	</tr>
+	<tr>
+		<td>Santiago</td>
+		<td>Gagliano</td>
+	</tr>
+	<tr>
+		<td>Bautista</td>
+		<td>Gagliano</td>
+	</tr>
+</table>
+</article>
+<br>
+<br>
+<br>
+<br>
+<br>
+<!-- Se utiliza el aside para todo lo que luego ubicaremos en la parte derecha de la página -->
+<aside>
+	<h2><b>Contenido ubicado en la Derecha  <b>----></h2>
+</aside>
+<!-- Se utiliza el Footer para ubicar dentro todo lo que vendría a ser el pie de página -->
+<footer>
+    <h2 id="Bajar">Footer</h2>
+
+	<h3>Mis redes sociales</h3> 
+	<br>
+	<ul>
+		<li>
+			<h3>Mis redes sociales</h3>
+			<a href="https://www.instagram.com/gagliano_bautista/">Instagram</a>
+			<br>
+			<a href="https://www.instagram.com/gagliano_bautista/">Twitter</a>
+			<br>
+			<a href="https://www.instagram.com/gagliano_bautista/">TikTok</a>
+		</li>
+	</ul>
+
+
+<h4 class="PrimeraCaja"></h4>
+<h4 class="SegundaCaja"></h4>
+<h4 class="TerceraCaja"></h4>
+</div>
+
+</footer>
+</body>
+</html>

@@ -1,0 +1,278 @@
+/* CSS */
+
+/*Seleccionar Todo*/
+* {
+ color: red;
+ font-size: 100%;
+}
+/*Seleccionar por Tipos*/
+h1 {
+ /*Seleccionar Tamaño*/
+ font-size: 60px;
+ /* Cambiar Color */
+ color: black;
+ /*Fondo*/
+ background: grey;
+ /*Ancho*/
+ width: 1820px;
+ /*Largo*/
+ height: 60px;
+/*poscision de el texto*/
+ line-height:120px ; 
+ /*Opacidad*/
+ opacity: 0.7;
+  /*Tipografia*/
+ font-family:georgia;
+ /*Aumenta el espacio exterior de la caja de arriba y abajo*/
+ display: inline;
+/* hace que las cajitas lleguen hasta el maximo de la pagina */
+ display: block;
+ /*aumenta el tamaño de la caja para arriba */
+ padding-top: 40px;
+ /*aumenta el tamaño de la caja para arriba */
+ padding-bottom: 40px;
+ /*aumenta el tamaño de la caja para la izquierda */
+ padding-left: 40px;
+ /*aumenta el tamaño de la caja para la derecha */
+ padding-right: 40px;
+/*para poner el texto en el centro de la caja se usa */
+ text-align: center;
+/*separa la caja de las otras cajas*/
+margin-top: 20px;
+
+margin-bottom: 20px;
+
+margin-left: 20px;
+
+margin-right: 20px;
+/*hace mas rendonda las cajas*/
+border-radius: 40px;
+/*Somra a los textos*/
+text-shadow: 5px 5px 5px black;
+}
+
+.PrimeraCaja{
+    background: orange;
+    width: 250px;
+    height: 250px;
+    margin-right: 40px;
+    margin-left: 40px;
+    /*Personalizar el borde de las cajas*/
+    border:20px solid red;
+    /*apila las cajas una al lado de la otra de izquierda a derecha*/
+    display: inline-block;
+    /*o tambien se puede usar*/
+    float: left;
+    /* Sombra */
+     box-shadow: -25px 25px 5px 0px black;
+
+     position: relative;
+     left: 20px;
+    /* Ordena los elementos en el eje Z */
+     z-index: 1;
+}
+.SegundaCaja{
+    background: yellow;
+    width: 250px;
+    height: 250px;
+
+    display: inline-block;
+    /*float right */
+    /*personalizar bordes*/
+    border:20px dashed green;
+    /* Rotar */
+    transform: rotate(15deg);
+}
+.TerceraCaja{
+    background: blue;
+    width: 250px;
+    height: 250px;
+
+    display: inline-block;
+    border:20px double violet;
+    /*otros estilos de bordes:groove,inset,outset,ridge*/
+    /* poscicionar */
+    position: relative;
+
+    top: 30px ;
+    bottom: 30px ;
+    right: 30px;  
+}
+.Overflow{
+   background: grey;
+   height:260px ;
+   width: 260px;
+   /* Agrega el scroll cuando el texto se sale del div */
+   overflow: auto;
+}
+.Overflow__p{
+    
+    color: black;
+}
+
+
+.form
+{
+ font-size: 20px;
+ width: 300px;
+ height: 300px;
+ background: greenyellow;
+ color: yellowgreen;
+ text-align: center;
+ transition: 1s;
+ border: 20px solid yellowgreen;
+}
+.form:Hover
+{
+ font-size: 40px;
+ width: 500px;
+ height: 500px;
+ background: yellow;
+ color: red;
+ text-align: center;
+ border: 40px groove rgb(210, 250, 0);
+}
+.form__pulsar
+{
+ font-size: 20px;
+ width: 300px;
+ height: 300px;
+ background: darkred;
+ text-align: center;
+ border: 20px groove red;
+ transition:all 1.5s,width 4s,height 2.5s;
+ cursor: pointer;
+}
+.form__pulsar:active
+{
+ width: 900px;
+ height: 500px;
+ background: rgb(350, 20, 0);
+ color: darkred;
+ border: 20px groove rgb(250, 20, 0);
+
+}
+.Link1:link{
+color: :blue;
+}
+.Link2:link{
+color: :blue;
+}
+.Link3:link{
+color: :blue;
+}
+.Link1:Visited{
+color: violet;
+}
+.Link2:Visited{
+color: violet;
+}
+.Link3:Visited{
+color: violet;
+}
+
+
+/*Seleccionar por Clase (la clase se puede utilizar en mas de un objetos)*/
+.Subtitulo
+{
+ color: yellow;
+}
+/*Seleccionar por ID (El ID es unico,no puedo ponerselo a mas de un objeto)*/
+#Element
+{
+ color:Green;
+}
+/*Seleccionar por Descendientes*/
+div h1
+{
+ color:Blue;
+}
+/*Seleccionar por PseudoClases*/
+.MousePorEncima:Hover
+{
+ color: yellowgreen;
+}
+/* Especificidad(menor-mayor) */
+
+H3
+{
+ color: blueviolet;
+}
+.Clase-Especificidad{
+ color: Violet;
+}
+h3:Hover
+{
+ color: Violet;
+}
+#Identificacion-especificidad
+{
+ color: darkviolet;
+}
+H3{
+/* color: palevioletred !important;*/
+}
+.Div-img{
+    width: 230px;
+    height: 230px;
+    overflow: auto;
+}
+.Pseudoelemento__p{
+color: green;
+background: yellow;
+}
+.Pseudoelemento__p::first-line{
+color: yellow;
+background: green;
+}
+.Pseudoelemento__p::first-letter{
+color: yellowgreen;
+background: greenyellow;
+font-size: 60px;
+}
+.Seleccionar__h4::selection{
+    color: rgb(100, 0, 180);
+    background: red;
+}
+.Seleccionar__h4{
+    font-size: 40px;
+}
+
+.beforeYafter__h4{
+font-size: 20px;
+color: black;
+}
+.beforeYafter__h4::before{
+content: " (before) me ";
+color: grey;
+}
+.beforeYafter__h4::after{
+content: " programar (after)";
+color: grey;
+}
+input{
+    width: 130px;
+    height: 60px;
+    transition: 1s;
+    font-size: 13px;
+    color: grey;
+}
+input:focus
+{
+ background: rgb(200, 200, 200);
+ width: 200px ;
+ height:90px ;
+ font-size: 25px;
+ color: black;
+}
+.Bordes{
+border: 5px solid grey;
+width: 700px;
+}
+.Bordes__img{
+    width: 500px;
+    height: 500px;
+ object-fit: cover;}
+ .dontModify{
+    cursor: not-allowed;
+ }
